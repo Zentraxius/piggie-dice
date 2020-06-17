@@ -1,52 +1,27 @@
-//BUSINESS LOGIC
-var playerOne = newPlayer("Player One")
-var playerTwo = newPlayer("Player two")
 
-function players () {
-  this.totalScore = 0;
-  this.roundScore = 0;
+function Player (player1) {
+  this.player1 = player1;
+  this.player1Total = p1Total;
+  this.player1Round = p1Round;
 }
 
-Game.prototype.switchTurn = 
-
-
-Player1.prototype.dieroller = function() {
-  this.diceRoll = Math.floor((Math.random() * 6) + 1);
+function Dice () {
+  let roll = Math.floor((Math.random() * 6) + 1);
+  this.diceRoll = roll;
 }
 
-Player2.prototype.dieroller = function() {
-  this.diceRoll = Math.floor((Math.random() * 6) + 1);
+Dice.prototype.dieRoll = function (totalScore) {
+  if (this.diceRoll > 2) {
+    return 
+  } else if (this.diceRoll < 2) {
+    return 
 }
 
-if (this.rollscore === 1) {
-  this.roundscore = 0;
-} else {
-  this.roundscore += this.rollscore;
-}
-
-Player2.prototype.totalscore = function() {
-this.totalscore += this.roundscore
-}
-
-//Prototypes
-// add a round
-// add a roll
-// switch turns
-
-
-
-//USER INTERFACE
 
 $(document).ready(function() {
-$("#roll").click(function() {
-  $("#player1Score").text("whatever our thing is that does dice rolls");
-  $("#player2Score").text("whatever our thing is that does dice rolls");
-});
-  
-$("#hold").click(function() {
-  $("#player1Score").text("whatever our thing is that does dice rolls");
-  $("#player2Score").text("whatever our thing is that does dice rolls");
+  $("form#thegame").submit(function(event) {
+    event.preventDefault();
 
-});
-  event.preventDefault();
+  
+  })
 });
