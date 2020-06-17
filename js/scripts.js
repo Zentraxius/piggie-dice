@@ -1,4 +1,7 @@
 //BUSINESS LOGIC
+var playerOne = newPlayer("Player One")
+var playerTwo = newPlayer("Player two")
+
 function players () {
   this.totalScore = 0;
   this.roundScore = 0;
@@ -16,6 +19,10 @@ if (this.rollscore === 1) {
   this.roundscore = 0;
 } else {
   this.roundscore += this.rollscore;
+}
+
+Player2.prototype.totalscore = function() {
+this.totalscore += this.roundscore
 }
 
 //Prototypes

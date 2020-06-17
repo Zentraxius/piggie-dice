@@ -22,7 +22,7 @@
 
 ## Specs
 
-words here
+
 Input: Player rolls a 2, 3, 4, 5 or 6.
 Output: Score is added to running total.
 
