@@ -1,6 +1,6 @@
 # Pig Dice
 
-#### Website that mimics a REAL LIFE BANK ACCOUNT to show you what it's like to have money.
+#### Pig dice game where each player rolls a die until they reach 100.
 
 #### By Kelly Eidsvik & Emma Hellman
 
