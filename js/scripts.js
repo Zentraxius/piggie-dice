@@ -7,6 +7,9 @@ function players () {
   this.roundScore = 0;
 }
 
+Game.prototype.switchTurn = 
+
+
 Player1.prototype.dieroller = function() {
   this.diceRoll = Math.floor((Math.random() * 6) + 1);
 }
@@ -36,12 +39,14 @@ this.totalscore += this.roundscore
 
 $(document).ready(function() {
 $("#roll").click(function() {
-// stuff here
+  $("#player1Score").text("whatever our thing is that does dice rolls");
+  $("#player2Score").text("whatever our thing is that does dice rolls");
 });
   
 $("#hold").click(function() {
-// stuff here
+  $("#player1Score").text("whatever our thing is that does dice rolls");
+  $("#player2Score").text("whatever our thing is that does dice rolls");
+
 });
-  event.preventDefault()l
-}
-})
+  event.preventDefault();
+});
