@@ -21,14 +21,9 @@
 
 ## Specs
 
-Player rolls the dice
+Player rolls the dice *
 Input: roll
 Output: continue to roll dice until hitting 1.
-
-- Player constructor
-
-- Dice constructor
-- roll function
 
 Player hits 1 with dice
 Input: Dice rolls 1.

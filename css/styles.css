@@ -1,0 +1,9 @@
+body {
+  background-image: url("../img/piglet.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.jumbotron {
+  background-color: transparent;
+}

@@ -6,6 +6,7 @@ function Player (totalScore, roundTotal, diceRoll, currentPlayer) {
   this.diceRoll = diceRoll,
   this.currentPlayer = currentPlayer
 }
+
 //prototypes
 Player.prototype.rollTotal = function () {
   this.diceRoll = Math.floor((Math.random() * 6) +1);
@@ -22,8 +23,8 @@ Player.prototype.roundScore = function () {
 } 
 
 Player.prototype.totalSum = function () {
-  this.totalSore += this.roundScore
-  if (this.totalSore >= 100) {
+  this.totalScore += this.roundScore
+  if (this.totalScore >= 100) {
     alert("You won the game!")
     resetGame();
   }
@@ -62,6 +63,7 @@ var player2 = new Player(0, 0, 0, false);
       player1.roundScore(player1.diceRoll);
       $("#rollscore").text(player1.diceRoll);
       $("#player1round").text(player1.roundScore);
+      
     } else if (player2.currentPlayer === true) {
       player2.rollTotal();
       if (player2.diceRoll === 1) {
@@ -76,3 +78,23 @@ var player2 = new Player(0, 0, 0, false);
   })
 
 })
+
+
+// function totalRoll(roll, player){
+//   if (roll=== 1) {
+//     player.totalScore = 0;
+//     alert("You rolled a 1. Now it's your opponent's turn!");
+//   } 
+//    if (roll>1) {
+//     player.totalScore += roll;
+//   }
+// }
+
+// Player.prototype.roundScore = function () {
+//   if (this.diceRoll === 1) {
+//     this.roundTotal = 0;
+//     //switchturn?
+//   } else {
+//   this.roundTotal += this.diceRoll
+//   }
+// } 
