@@ -9,8 +9,8 @@ function Player (totalScore, roundTotal, diceRoll, currentPlayer) {
 
 //prototypes
 Player.prototype.rollTotal = function () {
-  this.diceRoll = Math.floor((Math.random() * 6) +1);
-  
+  this.diceRoll = Math.floor((Math.random() * 6) +1); 
+  console.log(this.diceRoll)
 }
 
 Player.prototype.roundScore = function () {
@@ -55,15 +55,15 @@ var player2 = new Player(0, 0, 0, false);
   
     if (player1.currentPlayer === true) {
       player1.rollTotal();
-      console.log(this.diceRoll)
-      if (player1.diceRoll === 1) {
-        player1.changeTurn();
-        player2.changeTurn();
-      } 
-      player1.roundScore(player1.diceRoll);
+// Scope Issue console.log(this.diceRoll)
+      player1.roundScore(); //player1.diceRoll
+      // if (player1.diceRoll === 1) {
+      //   player1.changeTurn();
+      //   player2.changeTurn();
+      // } 
       $("#rollscore").text(player1.diceRoll);
       $("#player1round").text(player1.roundScore);
-      
+
     } else if (player2.currentPlayer === true) {
       player2.rollTotal();
       if (player2.diceRoll === 1) {
